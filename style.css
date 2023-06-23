@@ -123,12 +123,67 @@
 }
 
 
+/* ex 10 */
+
 .ex-10-icon {
   font-size: 60px;
+  animation: rotazione 3s linear infinite;
 }
+
+@keyframes rotazione {
+  0% {
+    transform: rotate(1turn);
+  }
+}
+
+/* ex 11 */
+
+
 .ex-11-icon {
   font-size: 60px;
 }
+
+
+.ex-11-icon:hover {
+  
+  animation: rotazione 1s linear 1;
+}
+
+@keyframes rotazione {
+  0% {
+    transform: rotate(0turn);
+
+  }
+
+  20% {
+    transform: rotate(0.25turn);
+  }
+
+  40% {
+    transform: rotate(0.5turn);
+  }
+
+  60% {
+    transform: rotate(1turn);
+  }
+
+  80% {
+    transform: rotate(0.5turn)
+  }
+
+  90% {
+    transform: rotate(0.25turn);
+  }
+
+  100% {
+    transform: rotate (0turn);
+  }
+}
+
+
+
+
+
 .ex-12-button,
 .ex-13-button {
   position: relative;
